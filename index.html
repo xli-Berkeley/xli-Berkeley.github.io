@@ -98,27 +98,53 @@
     </div>
 </div>
 
-<div class="banner-text-info">
-    <h2>AI4Mat (AI for Materials) Lab</h2>
-    <p>Advancing research in materials science using AI technologies.</p>
-</div>    
-    
 <div class="banner background cover" id="cover">
-    <div class="container">
-          <div class="banner-text">
-                <div  id="top" class="callbacks_container">
-                    <ul class="rslides" id="slider3">
-                        <li>
-                            <div class="banner-text-info" >
-                                <h2>AI4Mat(AI for Materials)Lab</h2>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div> 
+    <div class="overlay">
+        <h2>AI4Mat (AI for Materials) Lab</h2>
+        <p>Advancing materials science with the power of AI</p>
     </div>
 </div>
+
+<script>
+    // const cof = 500 / 1792;
+    const cof = 500 / 1792; // 请根据需要调整这个比例
+    const width = window.innerWidth;
+    const img = document.getElementById('cover');
+
+    img.style.minHeight = (cof * width).toString() + "px";
+    img.style.background = "url(images/shenzhen.png) no-repeat center 0px";
+    img.style.backgroundSize = "cover";
+</script>
+
+<style>
+/* 覆盖层样式 */
+#cover {
+    position: relative;
+    color: white; /* 文字颜色 */
+    font-family: Arial, sans-serif;
+}
+
+/* 设置覆盖层文字居中 */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 文字阴影效果 */
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 文字阴影效果 */
+}
+</style>
     
 <script>
    // const cof = 500 / 1792;
