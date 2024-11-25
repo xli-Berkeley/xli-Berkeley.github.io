@@ -112,28 +112,25 @@
 </div>
 
 <div class="banner" id="cover">
-    <div class="container">
-<div id="cover" style="position: relative;">
-    <div id="text" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); color: white; font-size: 24px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">
-        AI4Mat (AI for Materials) Lab
-    </div>
-</div>
-	    
+    <div class="container" style="position: relative;">
+        <!-- 显示文字 -->
+        <div id="text" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); color: white; font-size: 24px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); z-index: 2;">
+            AI4Mat (AI for Materials) Lab
+        </div>
     </div>
 </div>
 
-
-	
 <script>
-    const cof = 520 / 1792;
+    // 动态设置封面高度并加载背景图片
+    const cof = 520 / 1792; // 高宽比
     const width = window.innerWidth;
     const img = document.getElementById('cover');
 
-    
     img.style.minHeight = (cof * width).toString() + "px";
-    img.style.background = "url(images/shenzhen.png) no-repeat center 0px";
+    img.style.background = "url('images/shenzhen.png') no-repeat center center";
     img.style.backgroundSize = "cover";
-</script>   
+</script>
+
 
 <!--research interests-->
 <div class="team" id="team">
