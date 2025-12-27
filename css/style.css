@@ -528,6 +528,22 @@ h4.little_title{
 /*    bottom: 0;*/
 /*    display: block;*/
 /*}*/
+
+/* 小标题：灰色下划线 */
+.sub-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #555555;
+    padding-bottom: 6px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #cccccc; /* 灰色下划线 */
+}
+
+
+
+
+
 .about-text {
     text-align: justify;
 }
@@ -1821,3 +1837,4 @@ h3.normal-margin {
     bottom: 0;
     
 } */
+
